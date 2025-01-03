@@ -4,4 +4,4 @@
 2. Framework: Spring Boot 3.4.1
 3. DB: H2
 
-remote-branch에서 수정함
+remote-branch에서 수정
