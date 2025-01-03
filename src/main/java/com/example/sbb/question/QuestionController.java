@@ -24,7 +24,6 @@ public class QuestionController {
 	
 	@GetMapping("/list")
 	public String list(Model model, @RequestParam(defaultValue="0") int page) {
-//		List<Question> questionList = this.questionRepository.findAll();
 		Page<Question> questionList = this.questionService.getList(page);
 		model.addAttribute("paging", questionList);
 		return "question_list";
